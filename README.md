@@ -51,7 +51,7 @@ npm run dev
 
 ### Note sur la clé API
 
-Le token Hugging Face doit avoir les permissions **"Write"** (même si on ne fait que lire les réponses). C'est une exigence de l'API Inference pour exécuter les modèles.
+Le token Hugging Face doit avoir les permissions **"Write"** (même si on ne fait que lire les réponses). C'est une exigence de l'API Inference pour exécuter les modèles. Le modèle utilisé est **Microsoft Phi-3-mini-4k-instruct**, un modèle compact et performant accessible gratuitement via l'API Hugging Face.
 
 Le chatbot fonctionne également **sans API** grâce à un système de réponses de secours (fallback) - mais l'IA génère des réponses encore plus créatives et uniques !
 
@@ -61,8 +61,8 @@ Le chatbot fonctionne également **sans API** grâce à un système de réponses
 
 - **Next.js 16** + **React 19** + **TypeScript**
 - **Tailwind CSS 4** - Design moderne
-- **Hugging Face Inference API** - IA générative
-- **Mistral-7B-Instruct** - Modèle de langage (7 milliards de paramètres)
+- **Hugging Face Inference API** - API d'inférence
+- **Microsoft Phi-3-mini-4k-instruct** - Modèle de langage compact et performant
 
 ---
 
@@ -143,13 +143,13 @@ const EASTER_EGGS: Record<string, string> = {
 Dans `app/api/chat/route.ts`, modifiez le modèle :
 
 ```typescript
-model: 'mistralai/Mistral-7B-Instruct-v0.2', // Changez ici
+model: 'microsoft/Phi-3-mini-4k-instruct', // Modèle actuel
 ```
 
-Autres modèles gratuits :
+Autres modèles gratuits disponibles :
 - `HuggingFaceH4/zephyr-7b-beta`
-- `meta-llama/Meta-Llama-3-8B-Instruct`
-- `microsoft/Phi-3-mini-4k-instruct`
+- `mistralai/Mistral-7B-Instruct-v0.2`
+- `mistralai/Mixtral-8x7B-Instruct-v0.1`
 
 ---
 

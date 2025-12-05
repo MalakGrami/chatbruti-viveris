@@ -39,9 +39,9 @@ export default function Home() {
 
           <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-blue-500">
             <div className="text-4xl mb-4 animate-bounce" style={{animationDelay: '150ms'}}>🤖</div>
-            <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">IA Hugging Face</h3>
+            <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">IA Microsoft Phi-3</h3>
             <p className="text-gray-600 dark:text-gray-400">
-              Propulsé par Mistral-7B-Instruct, finement entraîné pour être complètement à côté de la plaque
+              Propulsé par Phi-3-mini-4k-instruct, finement entraîné pour être complètement à côté de la plaque
             </p>
           </div>
 
@@ -112,7 +112,7 @@ export default function Home() {
             </div>
           </div>
           <p className="text-xs">
-            Propulsé par Next.js, React, TailwindCSS et Hugging Face 🤗
+            Propulsé par Next.js, React, TailwindCSS et Microsoft Phi-3 Mini
           </p>
         </div>
       </main>

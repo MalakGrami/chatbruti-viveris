@@ -254,7 +254,7 @@ export default function ChatBot() {
               </button>
             </div>
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 text-center">
-              Propulsé par Hugging Face 🤗
+              Propulsé par Microsoft Phi-3 Mini
             </p>
           </form>
         </div>
